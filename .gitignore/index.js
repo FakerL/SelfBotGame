@@ -3,8 +3,6 @@ const client = new Discord.Client();
 
 let prefix = "1."
 
-let prefix = "@."
-
 client.on("ready", () =>{
     console.log("Je suis prête")
     client.user.setActivity("➤ | 𝐅𝐈𝐀", {type : 1})
