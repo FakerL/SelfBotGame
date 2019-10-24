@@ -12,7 +12,7 @@ client.on("ready", () =>{
 client.on('message', message => {
 	
 	            if(message.content.startsWith(prefix + 'help')){
-                         message.channel.send("```──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄\n─▄▄──█░░░░░░░░░░░█──▄▄\n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█```")
+                         message.channel.send("```──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄\n─▄▄──█░░░░░░░░░░░█──▄▄                     Ⲋⲉⳑ⳨Ⲃⲟⲧ Ⲁⲕⲁⲩⲁ\n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█```")
            }
 	
 		
