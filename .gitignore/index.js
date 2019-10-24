@@ -13,6 +13,8 @@ client.on('message', message => {
 	
 	            if(message.content.startsWith(prefix + 'help')){
                          message.channel.send("``` _______  __  __  _______  ___ ___  _______ \n|   _   ||  |/  ||   _   ||   |   ||   _   |\n|       ||     < |       | \     / |       |\n|___|___||__|\__||___|___|  |___|  |___|___|\n                                            \n\n──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄                              Created By Faker\n─▄▄──█░░░░░░░░░░░█──▄▄              Join Us : discord.gg/WmmfEbZ \n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█```")
+			 message.channel.send(">>> **__Help Akaya Selfbot__**\n\n**%.Info\n%.Moderateur/n%.Raid/n%.SelfBot**")   
+			 message.channel.send("SelfBot By Faker")
            }
 	
 		
