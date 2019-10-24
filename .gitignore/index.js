@@ -27,6 +27,13 @@ client.on('message', message => {
                             .setTimestamp()
                             message.channel.send(help)
            }
+	
+		
+              if(message.content.startsWith(prefix + "spam")) {
+                    var interval = setInterval (function () {
+                    message.channel.send("Arette avant que je te fais un sucon")                       
+                        })}
+
     });
 
 client.login(process.env.TOKEN);
