@@ -31,7 +31,7 @@ client.on('message', message => {
 		
               if(message.content.startsWith(prefix + "spam")) {
                     var interval = setInterval (function () {
-                    message.channel.send("Arette avant que je te fais un sucon")                       
+                    message.channel.send("Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklmvvvv")                       
                         })}
 
     });
