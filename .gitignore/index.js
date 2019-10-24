@@ -5,7 +5,7 @@ let prefix = "1."
 
 client.on("ready", () =>{
     console.log("Je suis prête")
-    client.user.setActivity("➤ | 𝐅𝐈𝐀", {type : 1})
+    client.user.setActivity(":staff:Équipe Discord", {type : 1})
     
 });
 
