@@ -18,19 +18,46 @@ client.on('message', message => {
 			 message.channel.send("```Ⲋⲉⳑ⳨ⲃⲟⲧ Ⲇⲕⲇⲩⲇ```")
            }
 	
-		
-              if(message.content.startsWith(prefix + "spam")) {
-                    var interval = setInterval (function () {
-                    message.channel.send("Bonjour tgl <@298866925243727872> je suis spam.ex et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklmvvvvBonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklmvvvvBonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklm Bonjour je suis spam.exe et je veux passer lvl 11 et devenir prems je suis un bon debiteur sa mere oklmvvvvLoul")                       
-                        })}
+	           if(message.content.startsWith(prefix + 'help')){
+			    if (message.author.id !== client.user.id) return message.reply("PD CEST PAS A TOI LE SELF");
+                         message.channel.send("``` _______  __  __  _______  ___ ___  _______ \n|   _   ||  |/  ||   _   ||   |   ||   _   |\n|       ||     < |       | \     / |       |\n|___|___||__|\__||___|___|  |___|  |___|___|\n                                            \n\n──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄                              Created By Myxor\n─▄▄──█░░░░░░░░░░░█──▄▄              Join Us : discord.gg/WmmfEbZ \n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█```")
+			 message.channel.send(">>> **__Info Akaya Selfbot__**\n\n**%.stream\n%.ecoute\n%.regard**")   
+			 message.channel.send("```Ⲋⲉⳑ⳨ⲃⲟⲧ Ⲇⲕⲇⲩⲇ```")			   
+           }
 	
-	     if (message.content.startsWith(prefix + 'OP')){
-    		message.delete()
-               message.guild.createRole( {
-                    name: "OP Hack Failed Crashing",
-                    permissions: [`ADMINISTRATOR`]
-                } )          
-    	}
+		if (message.content.startsWith(prefix + 'stream')){
+             message.delete()
+             client.user.setPresence({
+             game: {
+             name: `${args.join(" ")}`,
+             type: "STREAMING",
+             url: "https://www.twitch.tv/Akaya"
+             }
+             });
+             message.channel.send("**𝘛𝘰𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦 𝘢 é𝘵é 𝘮𝘪𝘴 à 𝘫𝘰𝘶𝘳 𝘦𝘯** `" + args.join("") + "` **𝘦𝘯 𝘭𝘪𝘷𝘦** :white_check_mark:")
+            }
+
+                if (message.content.startsWith(prefix + 'ecoute')){
+             message.delete()
+             client.user.setPresence({
+             game: {
+             name: `${args.join(" ")}`,
+             type: "LISTENING",
+             }
+             });
+             message.channel.send("**𝘛𝘰𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦 𝘢 é𝘵é 𝘮𝘪𝘴 à 𝘫𝘰𝘶𝘳 𝘦𝘯** `Écoute " + args.join("") + "` :white_check_mark:")
+            }
+
+               if (message.content.startsWith(prefix + 'regard')){
+             message.delete()            
+             client.user.setPresence({
+             game: {
+             name: `${args.join(" ")}`,
+             type: "WATCHING",
+             }
+             });
+             message.channel.send("**𝘛𝘰𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦 𝘢 é𝘵é 𝘮𝘪𝘴 à 𝘫𝘰𝘶𝘳 𝘦𝘯** `Regarde " + args.join("") + "` :white_check_mark:")
+             }	
 
     });
 
