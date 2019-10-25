@@ -12,7 +12,7 @@ client.on("ready", () =>{
 client.on('message', message => {
 	
 	            if(message.content.startsWith(prefix + 'help')){
-			    if (message.author.id !== client.user.id) return;
+			    if (message.author.id !== client.user.id) return message.channel.send("noop");
                          message.channel.send("``` _______  __  __  _______  ___ ___  _______ \n|   _   ||  |/  ||   _   ||   |   ||   _   |\n|       ||     < |       | \     / |       |\n|___|___||__|\__||___|___|  |___|  |___|___|\n                                            \n\n──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄                              Created By Myxor\n─▄▄──█░░░░░░░░░░░█──▄▄              Join Us : discord.gg/WmmfEbZ \n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█```")
 			 message.channel.send(">>> **__Help Akaya Selfbot__**\n\n**%.Info\n%.Moderateur\n%.Raid\n%.SelfBot**")   
 			 message.channel.send("```Ⲋⲉⳑ⳨ⲃⲟⲧ Ⲇⲕⲇⲩⲇ```")
