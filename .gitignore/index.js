@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-let prefix = "%."
+let prefix = "%." or "1."
 
 client.on("ready", () =>{
     console.log("Je suis prête")
