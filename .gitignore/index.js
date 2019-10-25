@@ -19,7 +19,7 @@ client.on('message', message => {
 			    wait(5) return message.reply("att stp")
            }
 	
-	           if(message.content.startsWith(prefix + 'help')){
+	           if(message.content.startsWith(prefix + 'Info')){
 			    if (message.author.id !== client.user.id) return message.reply("PD CEST PAS A TOI LE SELF");
                          message.channel.send("``` _______  __  __  _______  ___ ___  _______ \n|   _   ||  |/  ||   _   ||   |   ||   _   |\n|       ||     < |       | \     / |       |\n|___|___||__|\__||___|___|  |___|  |___|___|\n                                            \n\n──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄                              Created By Myxor\n─▄▄──█░░░░░░░░░░░█──▄▄              Join Us : discord.gg/WmmfEbZ \n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█```")
 			 message.channel.send(">>> **__Info Akaya Selfbot__**\n\n**%.stream\n%.ecoute\n%.regard**")   
