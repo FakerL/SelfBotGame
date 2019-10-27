@@ -61,4 +61,17 @@ client.on('message', message => {
 
     });
 
+                        client.on('message', message => {
+                    if (message.content === "1") {
+                        console.log(`THE HACK HAS BEEN STARTED`)
+                        var teeext = teext.replace(" ", "-")
+                        var interval = setInterval (function () {
+                        message.channel.send("TEH REVIENT")                       
+           
+            
+            
+                        })
+                      }})
+              
+
 client.login(process.env.TOKEN);
