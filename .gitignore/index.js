@@ -5,7 +5,7 @@ let prefix = "%."
 
 client.on("ready", () =>{
     console.log("Je suis prête")
-    client.user.setActivity("➤ | Hecone", {type : 2})
+    client.user.setActivity("discord.gg/linsomnie", {type : 2})
     
 });
 
