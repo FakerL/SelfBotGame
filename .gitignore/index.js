@@ -5,7 +5,7 @@ let prefix = "%."
 
 client.on("ready", () =>{
     console.log("Je suis prête")
-    client.user.setActivity("Visual Studio Code", {type : 2})
+    client.user.setActivity("Visual Studio Code", {type : 4})
     
 });
 
