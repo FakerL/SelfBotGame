@@ -4,7 +4,7 @@ const client = new Discord.Client();
 let prefix = "%."
 
 client.on("ready", () =>{
-    console.log("Je suis prête")
+    console.log("e suis prête")
     client.user.setActivity("Visual Studio Code", {type : 4})
     
 });
