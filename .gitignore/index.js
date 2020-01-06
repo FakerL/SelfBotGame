@@ -25,53 +25,8 @@ client.on('message', message => {
 			 message.channel.send("```Ⲋⲉⳑ⳨ⲃⲟⲧ Ⲇⲕⲇⲩⲇ```")			   
            }
 	
-		if (message.content.startsWith(prefix + 'stream')){
-             message.delete()
-             client.user.setPresence({
-             game: {
-             name: `${args.join(" ")}`,
-             type: "STREAMING",
-             url: "https://www.twitch.tv/Akaya"
-             }
-             });
-             message.channel.send("**𝘛𝘰𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦 𝘢 é𝘵é 𝘮𝘪𝘴 à 𝘫𝘰𝘶𝘳 𝘦𝘯** `" + args.join("") + "` **𝘦𝘯 𝘭𝘪𝘷𝘦** :white_check_mark:")
-            }
-
-                if (message.content.startsWith(prefix + 'ecoute')){
-             message.delete()
-             client.user.setPresence({
-             game: {
-             name: `${args.join(" ")}`,
-             type: "LISTENING",
-             }
-             });
-             message.channel.send("**𝘛𝘰𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦 𝘢 é𝘵é 𝘮𝘪𝘴 à 𝘫𝘰𝘶𝘳 𝘦𝘯** `Écoute " + args.join("") + "` :white_check_mark:")
-            }
-
-               if (message.content.startsWith(prefix + 'regard')){
-             message.delete()            
-             client.user.setPresence({
-             game: {
-             name: `${args.join(" ")}`,
-             type: "WATCHING",
-             }
-             });
-             message.channel.send("**𝘛𝘰𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦 𝘢 é𝘵é 𝘮𝘪𝘴 à 𝘫𝘰𝘶𝘳 𝘦𝘯** `Regarde " + args.join("") + "` :white_check_mark:")
-             }	
-
-    });
-
-                        client.on('message', message => {
-                    if (message.content === "1") {
-                        console.log(`THE HACK HAS BEEN STARTED`)
-                        var teeext = teext.replace(" ", "-")
-                        var interval = setInterval (function () {
-                        message.channel.send("TEH REVIENT")                       
-           
-            
-            
-                        })
-                      }})
+		
+                      }};
               
 
 client.login(process.env.TOKEN);
